@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilal Transport Service | Heavy Dumper & Construction Logistics</title>
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="cs.css" />
+  <script src="js.js"></script>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-truck-moving"></i>
+        <div>
+          <span class="brand-main">BILAL</span>
+          <span class="brand-sub">TRANSPORT SERVICE</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#fleet">Fleet & Prices</a>
+        <a href="#rates">Rate List</a>
+        <a href="#calculator">Book Dumper</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+923001234567" class="btn btn-amber"><i class="fa-solid fa-phone"></i> 0300-1234567</a>
+        <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge"><i class="fa-solid fa-shield-halved"></i> 24/7 Heavy Logistics & Material Supply</span>
+      <h1>RELIABLE DUMPER TRANSPORT <span class="text-amber">ACROSS PAKISTAN</span></h1>
+      <p>Fast, on-time delivery of Rait (Sand), Bajri (Crush), Mitti, and Malba removal with our 10-Wheeler, 12-Wheeler, and 22-Wheeler heavy dumpers.</p>
+      <div class="hero-btns">
+        <a href="#calculator" class="btn btn-amber btn-lg">Calculate Fare & Book</a>
+        <a href="#fleet" class="btn btn-outline btn-lg">View Fleet & Prices</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>35+</strong><span>Heavy Dumpers</span></div>
+        <div><strong>12+ Years</strong><span>Industry Trust</span></div>
+        <div><strong>24/7</strong><span>Site Dispatch</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet & Booking Prices Section -->
+  <section id="fleet" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">OUR HEAVY FLEET</span>
+        <h2>DUMPER TRUCKS & STARTING BOOKING PRICES</h2>
+      </div>
+
+      <div class="fleet-grid">
+        <!-- 10-Wheeler Card -->
+        <div class="fleet-card">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="10 Wheeler Dumper Truck">
+            <span class="price-tag">From Rs. 9,500 / Trip</span>
+          </div>
+          <div class="card-body">
+            <h3>10-Wheeler Dumper</h3>
+            <p class="specs"><i class="fa-solid fa-weight-hanging"></i> Capacity: 18 - 22 Tons (550 - 650 CFT)</p>
+            <p class="desc">Best for residential housing societies, narrow site access, sand, and debris removal.</p>
+            <button class="btn btn-dark full-width select-truck" data-truck="10-wheeler">Select 10-Wheeler</button>
+          </div>
+        </div>
+
+        <!-- 12-Wheeler Card -->
+        <div class="fleet-card featured">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80" alt="12 Wheeler Heavy Dumper">
+            <span class="price-tag">From Rs. 13,500 / Trip</span>
+            <span class="popular-tag">MOST BOOKED</span>
+          </div>
+          <div class="card-body">
+            <h3>12-Wheeler Dumper</h3>
+            <p class="specs"><i class="fa-solid fa-weight-hanging"></i> Capacity: 25 - 30 Tons (750 - 850 CFT)</p>
+            <p class="desc">Ideal for commercial plazas, crush/bajri transport, and bulk earthwork filling.</p>
+            <button class="btn btn-amber full-width select-truck" data-truck="12-wheeler">Select 12-Wheeler</button>
+          </div>
+        </div>
+
+        <!-- 22-Wheeler Card -->
+        <div class="fleet-card">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=80" alt="22 Wheeler Trailer Dumper">
+            <span class="price-tag">From Rs. 24,000 / Trip</span>
+          </div>
+          <div class="card-body">
+            <h3>22-Wheeler Trailer Dumper</h3>
+            <p class="specs"><i class="fa-solid fa-weight-hanging"></i> Capacity: 45 - 55 Tons (1200+ CFT)</p>
+            <p class="desc">Built for mega highway projects, industrial plants, and long-haul bulk quarry transport.</p>
+            <button class="btn btn-dark full-width select-truck" data-truck="22-wheeler">Select 22-Wheeler</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material & Dumper Rate Table -->
+  <section id="rates" class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">TRANSPARENT PRICING</span>
+        <h2>STANDARD BOOKING & MATERIAL RATE LIST (PKR)</h2>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Material / Service</th>
+              <th>10-Wheeler (600 CFT)</th>
+              <th>12-Wheeler (800 CFT)</th>
+              <th>22-Wheeler (1250 CFT)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Rait (River Sand)</strong></td>
+              <td>Rs. 14,500</td>
+              <td>Rs. 19,500</td>
+              <td>Rs. 32,000</td>
+            </tr>
+            <tr>
+              <td><strong>Bajri / Crush (Margalla/Sargodha)</strong></td>
+              <td>Rs. 24,000</td>
+              <td>Rs. 32,500</td>
+              <td>Rs. 54,000</td>
+            </tr>
+            <tr>
+              <td><strong>Mitti (Sweet Fill Soil)</strong></td>
+              <td>Rs. 9,500</td>
+              <td>Rs. 13,500</td>
+              <td>Rs. 24,000</td>
+            </tr>
+            <tr>
+              <td><strong>Malba / Construction Debris Removal</strong></td>
+              <td>Rs. 10,500</td>
+              <td>Rs. 14,500</td>
+              <td>Rs. 25,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Freight Calculator & Booking Form -->
+  <section id="calculator" class="section">
+    <div class="container">
+      <div class="booking-box">
+        <div class="calc-panel">
+          <h2>INSTANT FARE CALCULATOR & BOOKING</h2>
+          <p>Select your dumper, material, and distance to get an instant fare estimate.</p>
+
+          <form id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Dumper Type</label>
+                <select id="truckType">
+                  <option value="10-wheeler">10-Wheeler Dumper (Base Rs. 9,500)</option>
+                  <option value="12-wheeler" selected>12-Wheeler Dumper (Base Rs. 13,500)</option>
+                  <option value="22-wheeler">22-Wheeler Trailer (Base Rs. 24,000)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Material / Load</label>
+                <select id="materialType">
+                  <option value="mitti">Mitti (Fill Soil)</option>
+                  <option value="malba">Malba / Debris Removal</option>
+                  <option value="rait">Rait (Sand)</option>
+                  <option value="bajri">Bajri / Crush</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Distance: <strong id="distanceValue" class
